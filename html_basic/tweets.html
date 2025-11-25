@@ -6,29 +6,56 @@
 </head>
 <body>
 
-    <h1>My Social Media Feed</h1>
+    <!-- MANDATORY HEADER TAG -->
+    <header>
+        <nav>
+            <!-- MANDATORY UNORDERED LIST OF LINKS -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tweets.html">Tweets</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Link back to the homepage -->
-    <p>
-        <a href="index.html" style="color: #1DA1F2; font-weight: bold;">← Return to the Homepage</a>
-    </p>
+    <!-- MANDATORY MAIN TAG -->
+    <main>
+        <!-- MANDATORY ARTICLE TAG (Contains all original content) -->
+        <article>
 
-    <h2>Latest Thoughts and Updates</h2>
+            <h1>My Social Media Feed</h1>
 
-    <p>
-        Below is an example of an embedded tweet, demonstrating how external, interactive content can be included in a webpage.
-    </p>
+            <!-- Link back to the homepage (now optional, but kept for context before full navigation was built) -->
+            <p>
+                <a href="index.html">← Return to the Homepage</a>
+            </p>
 
-    <!-- EMBEDDED TWEET EXAMPLE -->
-    <!-- Note: The actual tweet data is often complex, this is a standard placeholder structure -->
-    <blockquote class="twitter-tweet">
-        <p lang="en" dir="ltr">Just finished connecting my VS Code to GitHub. Version control is a game-changer! Highly recommend learning the Git workflow early in your development journey. #webdev #gitlearning</p>
-        &mdash; ALX Student (@CodeEnthusiast) 
-        <a href="https://twitter.com/TwitterDev/status/20" target="_blank">November 26, 2025</a>
-    </blockquote> 
+            <h2>Latest Thoughts and Updates</h2>
 
-    <!-- Twitter's widgets script is REQUIRED for the blockquote above to render as a tweet -->
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <p>
+                Below is an example of an embedded tweet, demonstrating how external, interactive content can be included in a webpage.
+            </p>
+
+            <!-- EMBEDDED TWEET EXAMPLE -->
+            <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">Just finished connecting my VS Code to GitHub. Version control is a game-changer! Highly recommend learning the Git workflow early in your development journey. #webdev #gitlearning</p>
+                &mdash; ALX Student (@CodeEnthusiast) 
+                <a href="https://twitter.com/TwitterDev/status/20" target="_blank">November 26, 2025</a>
+            </blockquote> 
+
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        </article>
+
+        <!-- MANDATORY ASIDE TAG -->
+        <aside>
+            <p>placeholder to add comment thread later</p>
+        </aside>
+    </main>
+
+    <!-- MANDATORY FOOTER TAG (Paragraph on a single line) -->
+    <footer>
+        <p>Made by [KAZEEM OLADIMEJI] - <a href="https://www.alxafrica.com" target="_blank">here</a>.</p>
+    </footer>
 
 </body>
 </html>

@@ -1,35 +1,84 @@
-<title>My Embedded Tweets</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Portfolio Website</title>
 </head>
 <body>
+    <!-- MANDATORY HEADER TAG -->
+    <header>
+        <nav>
+            <!-- MANDATORY UNORDERED LIST OF LINKS -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tweets.html">Tweets</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>My Social Media Feed</h1> <!-- NAVIGATION LINK TO TWEETS.HTML -->
-<p style="text-align: center; margin-bottom: 20px;">
-    <a href="tweets.html" style="font-weight: bold; color: #1DA1F2; text-decoration: none; border-bottom: 2px solid #1DA1F2; padding-bottom: 2px;">
-        → See My Embedded Tweets Here ←
-    </a>
-</p>
+    <!-- MANDATORY MAIN TAG -->
+    <main>
+        <!-- MANDATORY ARTICLE TAG (Contains all original content) -->
+        <article>
 
-    <!-- Link back to the homepage -->
-    <p>
-        <a href="index.html" style="color: #1DA1F2; font-weight: bold;">← Return to the Homepage</a>
-    </p>
+            <!-- NAVIGATION LINK TO TWEETS.HTML (Moved outside h1) -->
+            <p style="text-align: center; margin-bottom: 20px;">
+                <a href="tweets.html">→ See My Embedded Tweets Here ←</a>
+            </p>
 
-    <h2>Latest Thoughts and Updates</h2>
+            <h1>Welcome to My First Portfolio Website!</h1>
 
-    <p>
-        Below is an example of an embedded tweet, demonstrating how external, interactive content can be included in a webpage.
-    </p>
+            <!-- INTRODUCTION PARAGRAPH -->
+            <p>
+                This website serves as my very first step into the world of web development. 
+                It is a simple demonstration of core HTML concepts, ensuring I have the most basic, 
+                valid structure down before tackling styling with CSS.
+            </p>
 
-    <!-- EMBEDDED TWEET EXAMPLE -->
-    <!-- Note: The actual tweet data is often complex, this is a standard placeholder structure -->
-    <blockquote class="twitter-tweet">
-        <p lang="en" dir="ltr">Just finished connecting my VS Code to GitHub. Version control is a game-changer! Highly recommend learning the Git workflow early in your development journey. #webdev #gitlearning</p>
-        &mdash; ALX Student (@CodeEnthusiast) 
-        <a href="https://twitter.com/TwitterDev/status/20" target="_blank">November 26, 2025</a>
-    </blockquote> 
+            <h2>About This Project</h2>
 
-    <!-- Twitter's widgets script is REQUIRED for the blockquote above to render as a tweet -->
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <!-- PARAGRAPHS -->
+            <p>
+                The foundation of any good website lies in semantic HTML—using the right tags for the right purpose. 
+                Here, we are exploring the structure required by the official HTML validator, which mandates the 
+                language attribute and the character set definition. This ensures accessibility and proper rendering 
+                across all browsers.
+            </p>
+
+            <p>
+                I am focusing specifically on incorporating key body elements: headings for hierarchy, paragraphs for 
+                readable text blocks, and the crucial interactive element of a hyperlink combined with an image.
+            </p>
+
+            <h3>Interactive Element Showcase</h3>
+
+            <!-- PARAGRAPH AND CLICKABLE IMAGE -->
+            <p>
+                Below is an example of an image wrapped within an anchor tag (<a>). Clicking this image will redirect 
+                you to a specific online destination, demonstrating how images can be made clickable links.
+            </p>
+
+            <!-- CLICKABLE IMAGE -->
+            <a href="https://www.alxafrica.com" target="_blank">
+                <img 
+                    src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" 
+                    alt="ALX Africa Logo - Click to visit website"
+                    title="Click me to visit the ALX Website"
+                    style="width:200px; height:auto; border-radius: 8px; border: 2px solid #000;">
+            </a>
+
+        </article>
+
+        <!-- MANDATORY ASIDE TAG -->
+        <aside>
+            <p>placeholder to add comment thread later</p>
+        </aside>
+    </main>
+
+    <!-- MANDATORY FOOTER TAG (Paragraph on a single line) -->
+    <footer>
+        <p>Made by [YOUR NAME] - <a href="https://www.alxafrica.com" target="_blank">here</a>.</p>
+    </footer>
 
 </body>
 </html>
